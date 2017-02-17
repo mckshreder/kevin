@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tictactoe">
+<head>
+    <meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+	<title>Tic Tac Toe</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/GameController.js"></script>
+	
+</head>
+
+<body ng-controller="TicTacController" id="container">
+<h1>Tic Tac Toe</h1>
+<p id="left_message">{{game.leftMessage}}</p>
+<p id="right_message">{{game.rightMessage}}</p>
+<div class="board">
+	 <table>
+      <tr id="row1">
+        <td class="cell" ng-click="drawMark(0)">{{game.cells[0]}}</td>
+        <td class="cell" ng-click="drawMark(1)">{{game.cells[1]}}</td>
+        <td class="cell" ng-click="drawMark(2)">{{game.cells[2]}}</td>
+      </tr>
+      <tr id="row2">
+        <td class="cell" ng-click="drawMark(3)">{{game.cells[3]}}</td>
+        <td class="cell" ng-click="drawMark(4)">{{game.cells[4]}}</td>
+        <td class="cell" ng-click="drawMark(5)">{{game.cells[5]}}</td>
+      </tr>
+      <tr id="row3">
+        <td class="cell" ng-click="drawMark(6)">{{game.cells[6]}}</td>
+        <td class="cell" ng-click="drawMark(7)">{{game.cells[7]}}</td>
+        <td class="cell" ng-click="drawMark(8)">{{game.cells[8]}}</td>
+      </tr>
+    </table>
+  </div>
+		
+	</div>
+	
+	<div class="left">
+		<div class="reset" ng-click="clearBoard()">Play New Game</div> 
+		
+		
+		<p><input type="text" id="p1_name" ng-model="game.player1Name" ng-click="setName1(game.player1Name)" ng-keyup="removeFocus1($event)" /><p>
+		<p id="p1_score"> X = {{game.leftScore}} Wins</p>
+		<h1> VS </h1>
+		<p><input type="text" id="p2_name" ng-model="game.player2Name" ng-click="setName2(game.player2Name)" ng-keyup="removeFocus2($event)"/><p>
+		<p id="p2_score"> O = {{game.rightScore}} Wins</p>
+		
+		<div class="reset" ng-click="resetScore()">Refresh Match</div> 
+
+		
+	</div>
+	
+
+</body>
+
+</br>
+
+</br>
+<!-- <iframe width="100%" height="0" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139340091&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe> -->
+<footer>
+	<p>Created By Garrett McKenzie</p>
+</footer>
+</html>
+

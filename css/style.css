@@ -1,0 +1,230 @@
+body {
+	font-family: 'myFirstFont';
+	background-color: white;
+	margin-top: 0 auto;
+	background-image: url('../img/giphy.gif');
+	background-size: cover;
+
+}
+@font-face {
+   font-family: myFirstFont;
+   src: url(../img/Microgramma-D-OT-Bold-Extended_30403.ttf);
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+
+.left {
+	border: 2px solid black;
+  	background: rgba(172,160,144,0.5);
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+	height:430px;
+}
+	/*background-color: black;
+	width: 228px;
+	height: 100%;
+	float: left;
+	text-align: center;
+	color: #aca090;
+	font-size: 24px;
+	position: fixed;
+	top: 0;
+	left: 0;*/
+
+
+/*.right {
+	background-color: black;
+	width: 250px;
+	height: 100%;
+	float: right;
+	text-align: center;
+	color: #aca090;
+	font-size: 24px;
+	position: fixed;
+	top: 0;
+	right: 0;
+}*/
+
+h1 {
+	font-size: 65px;
+	color: black;
+	text-align: center;
+}
+
+.board {
+	width: 478px;
+	height: 468px;
+	margin-left: 14%;
+	float:left;
+
+}
+
+.cell {
+	color: black;
+	text-align: center;
+	line-height: 150px;
+	font-size: 100px;
+	float: left;
+	width: 150px;
+	height: 150px;
+	background: rgba(172,160,144,0.7);
+	margin: 3px;
+	cursor: pointer;
+	border-radius: 5px;
+	opacity: 0.9;
+	/*-webkit-animation-name: cellTextChangeColor; 
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate;
+    animation-name: cellTextChangeColor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;*/
+}
+
+/*@-webkit-keyframes cellTextChangeColor{
+        from {color: #0000ff;}
+        to {color:#eac117;}
+}
+
+@keyframes cellTextChangeColor{
+        from {color: #0000ff;}
+        to {color:#eac117;}
+}*/
+
+
+.cell:hover {
+	background-color: #7f766a;
+}
+
+
+.clear {
+	clear: both;
+}
+
+#left_message, #right_message {
+	margin-top: 30px;
+	font-size: 50px;
+	text-align: center;
+	-webkit-animation-name: cellTextChangeColor; 
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate;
+    animation-name: cellTextChangeColor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+
+}
+@-webkit-keyframes cellTextChangeColor{
+        from {color: #0000ff;}
+        to {color:#eac117;}
+}
+
+@keyframes cellTextChangeColor{
+        from {color: #0000ff;}
+        to {color:#eac117;}
+}
+
+#p1_name:hover, #p2_name:hover {
+	cursor: pointer;
+	color: #7f766a;
+}
+
+#p1_name, #p2_name {
+	background-color: white;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	width: 180px;
+	border: 2px solid black ;
+	font-family: 'myFirstFont';
+	opacity: 0.8;
+}
+#p1_score, #p2_score {
+background-color: white;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	width: 180px;
+	border: 2px solid black ;
+	font-family: 'myFirstFont';
+	opacity: 0.8;
+
+}
+
+input:focus {
+	outline: 0;
+}
+
+.reset {
+	width: 185px;
+	height: 35px;
+	border-radius: 8px;
+	float: clear;
+	line-height: 35px;
+	text-align: center;
+	margin-top: 8px;
+	
+	/*both button backgrounds change color*/
+	-webkit-animation-name: buttonChangeColor; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate;
+    animation-name: buttonChangeColor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;	
+    
+}
+/*both button bacgrounds change color*/
+@-webkit-keyframes buttonChangeColor{
+        from {background-color: #0000ff;}
+        to {background-color:#eac117;}
+}
+
+@keyframes buttonChangeColor{
+        from {background-color: #0000ff;}
+        to {background-color:#eac117;}
+}
+
+
+
+.reset:hover {
+	background-color: #7e3f3f;
+	cursor: pointer;
+	color: #aca090;
+}
+
+/*h1 {
+	-webkit-animation-name: TextChangeColor; 
+    -webkit-animation-duration: 0.5s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate;
+    animation-name: buttonTextChangeColor;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+/*both button text change color*/
+@-webkit-keyframes TextChangeColor{
+       from {color: #0000ff;}
+        to {color:#eac117;}
+}
+
+@keyframes TextChangeColor{
+        from {color: #0000ff;}
+        to {color:#eac117;}
+}*/
+
+
+
+
+

@@ -1,0 +1,33 @@
+
+{
+	"cells" : ["","","","","","","","",""]
+},
+	
+{
+	"currentMark" : "o"
+},
+{
+    "empty": true
+},
+{
+  	"moves": 1
+},
+{ 
+	"gameover": false
+},
+{
+   "leftScore": 0
+},
+{
+   "rightScore": 0
+},
+{  
+   "player1Name": ""
+},
+{
+   "player2Name": ""
+},
+{
+  "playerTurn": "x"
+}
+
